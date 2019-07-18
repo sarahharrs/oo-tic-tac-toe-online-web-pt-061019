@@ -51,7 +51,6 @@ end
        puts "Cats Game!"
      end
    end
-end
 
 def full?
 end
