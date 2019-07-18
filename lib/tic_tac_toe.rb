@@ -14,10 +14,20 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
 
-  def current_player
+   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
 
+  def turn
+  puts "Please enter 1-9:"
+      input = gets.strip
+      if valid_move?(input)
+        move(input, current_player)
+      else
+        turn
+      end
+      display_board
+    end
   def turn_count
     @board.count{|token| token == "X" || token == "O"}
   end
