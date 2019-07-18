@@ -46,6 +46,12 @@ def turn.count
 end
 
 def won?
+  if won?
+       puts "Congratulations #{winner}!"
+     elsif draw?
+       puts "Cats Game!"
+     end
+   end
 end
 
 def full?
