@@ -1,4 +1,5 @@
-'require pry'
+require 'pry'
+require_relative '../lib/tic_tac_toe.rb'
 
 class TicTacToe
   WIN_COMBINATIONS = [
