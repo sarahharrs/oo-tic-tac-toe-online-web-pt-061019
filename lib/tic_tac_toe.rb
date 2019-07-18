@@ -28,6 +28,7 @@ class TicTacToe
       end
       display_board
     end
+
   def turn_count
     @board.count{|token| token == "X" || token == "O"}
   end
@@ -49,11 +50,6 @@ end
 def valid_move?
 end
 
-def turn
-end
-
-def turn.count
-end
 
 def won?
   board_empty = @board.none? { |i| i == "X" || i = "O"}
