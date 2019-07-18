@@ -65,6 +65,7 @@ def winner
 end
 
 def play
+until over?
 end
 
 
