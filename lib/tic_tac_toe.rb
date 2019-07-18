@@ -56,7 +56,7 @@ def full?
 end
 
 def draw?
-
+  !won? && full? ? true : false
 end
 
 def over?
