@@ -59,6 +59,8 @@ def draw?
 end
 
 def over?
+  won? || draw? || full? ? true : false
+   end
 end
 
 def winner
